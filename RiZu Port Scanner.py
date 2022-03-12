@@ -49,7 +49,7 @@ while not (Verbose == "y" or Verbose == ""):
         Verbose = input("Would you like to suppress \"OFFLINE\" Messages? (Y/N/[ENTER=Y]").lower()
 
 tm = 0
-while (tm >= 1) and (tm <= 10):
+while not (tm >= 1) and (tm <= 10):
     tm = int(input("Enter timeout (Bigger = Longer; [1-10] Default = 2): "))
 
 start,end = port.split()
